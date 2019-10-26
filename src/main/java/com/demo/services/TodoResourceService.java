@@ -15,6 +15,11 @@ import com.demo.dao.UserDao;
 import com.demo.model.DAOTodo;
 import com.demo.model.Todo;
 
+
+/**
+ * @author Suvendu
+ *
+ */
 @Service
 public class TodoResourceService {
 
@@ -34,6 +39,10 @@ public class TodoResourceService {
 		return todoDao.findAll();
 	}
 	
+	/**
+	 * @param id
+	 * @return
+	 */
 	public Optional<DAOTodo> getTodo(long id) {
 		Optional<DAOTodo> todo=findById(id);
 		return todo;

@@ -15,8 +15,13 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
+/**
+ * @author Suvendu
+ *
+ */
 public class MyCORSFilter extends OncePerRequestFilter {
 
+	
 	@Override
 	   protected void doFilterInternal(HttpServletRequest request,
 	                                   HttpServletResponse response, FilterChain filterChain)
